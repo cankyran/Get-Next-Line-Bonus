@@ -6,7 +6,7 @@
 /*   By: mucankir <mucankir@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 20:20:39 by mucankir          #+#    #+#             */
-/*   Updated: 2024/12/14 21:50:19 by mucankir         ###   ########.fr       */
+/*   Updated: 2024/12/14 22:24:35 by mucankir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ char	*ft_new_static(char *static_str)
 	while (static_str[i] != '\0')
 		new_static[j++] = static_str[i++];
 	new_static[j] = '\0';
+	free(static_str);
 	return (new_static);
 }
 

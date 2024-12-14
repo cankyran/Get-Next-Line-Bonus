@@ -6,7 +6,7 @@
 /*   By: mucankir <mucankir@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 21:51:05 by mucankir          #+#    #+#             */
-/*   Updated: 2024/12/14 22:02:10 by mucankir         ###   ########.fr       */
+/*   Updated: 2024/12/14 22:25:36 by mucankir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ char	*ft_new_static(char *static_str)
 	while (static_str[i] != '\0')
 		new_static[j++] = static_str[i++];
 	new_static[j] = '\0';
+	free(static_str);
 	return (new_static);
 }
 
@@ -76,7 +77,7 @@ char	*ft_file_reader(char *static_str, int fd)
 
 	buffer = malloc(BUFFER_SIZE + 1);
 	if (!buffer)
-		return (NULL);
+		return (free(static_str), NULL);
 	byte_read = 1;
 	while (!ft_check_nl(static_str) && byte_read != 0)
 	{
