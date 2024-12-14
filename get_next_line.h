@@ -6,17 +6,15 @@
 /*   By: mucankir <mucankir@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 20:40:25 by mucankir          #+#    #+#             */
-/*   Updated: 2024/12/14 20:58:12 by mucankir         ###   ########.fr       */
+/*   Updated: 2024/12/15 01:29:48 by mucankir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include <stdlib.h>
-
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 2
+#  define BUFFER_SIZE 10
 # endif
 
 char	*get_next_line(int fd);

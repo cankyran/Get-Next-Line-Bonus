@@ -6,12 +6,13 @@
 /*   By: mucankir <mucankir@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 21:51:05 by mucankir          #+#    #+#             */
-/*   Updated: 2024/12/14 22:25:36 by mucankir         ###   ########.fr       */
+/*   Updated: 2024/12/15 01:44:40 by mucankir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 #include <unistd.h>
+#include <stdlib.h>
 
 char	*ft_new_static(char *static_str)
 {
@@ -52,7 +53,7 @@ char	*ft_get_line(char *static_str)
 		return (NULL);
 	while (static_str[i] != '\0' && static_str[i] != '\n')
 		i++;
-	line = malloc(i + 2);
+	line = malloc(i + 1 + ft_check_nl(static_str));
 	if (!line)
 		return (free(static_str), NULL);
 	i = 0;

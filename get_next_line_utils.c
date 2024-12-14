@@ -6,11 +6,12 @@
 /*   By: mucankir <mucankir@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 20:58:31 by mucankir          #+#    #+#             */
-/*   Updated: 2024/12/14 21:00:02 by mucankir         ###   ########.fr       */
+/*   Updated: 2024/12/15 01:10:59 by mucankir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include <stdlib.h>
 
 int	ft_check_nl(char *stash)
 {

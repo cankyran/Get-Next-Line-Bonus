@@ -6,11 +6,12 @@
 /*   By: mucankir <mucankir@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 21:41:08 by mucankir          #+#    #+#             */
-/*   Updated: 2024/12/14 22:00:11 by mucankir         ###   ########.fr       */
+/*   Updated: 2024/12/15 01:10:58 by mucankir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include <stdlib.h>
 
 char	*ft_str_join(char *s1, char *s2)
 {

@@ -6,14 +6,12 @@
 /*   By: mucankir <mucankir@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 21:55:33 by mucankir          #+#    #+#             */
-/*   Updated: 2024/12/14 22:01:35 by mucankir         ###   ########.fr       */
+/*   Updated: 2024/12/15 01:10:53 by mucankir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_BONUS_H
 # define GET_NEXT_LINE_BONUS_H
-
-# include <stdlib.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 2
